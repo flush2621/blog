@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>python模块 | Coding Test</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/blog/vintage.png">
+    <meta name="description" content="">
+    <link rel="preload" href="/blog/assets/css/0.styles.eb09ddcc.css" as="style"><link rel="preload" href="/blog/assets/js/app.5c42660f.js" as="script"><link rel="preload" href="/blog/assets/js/2.e56be046.js" as="script"><link rel="preload" href="/blog/assets/js/20.88ce400a.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.dfdebfe4.js"><link rel="prefetch" href="/blog/assets/js/11.f6969033.js"><link rel="prefetch" href="/blog/assets/js/12.4ee28117.js"><link rel="prefetch" href="/blog/assets/js/13.3d9bbc61.js"><link rel="prefetch" href="/blog/assets/js/14.d811ee2e.js"><link rel="prefetch" href="/blog/assets/js/15.f33d1813.js"><link rel="prefetch" href="/blog/assets/js/16.ec13d158.js"><link rel="prefetch" href="/blog/assets/js/17.4bc69c62.js"><link rel="prefetch" href="/blog/assets/js/18.ea863cb2.js"><link rel="prefetch" href="/blog/assets/js/19.92aabd56.js"><link rel="prefetch" href="/blog/assets/js/21.c39432cf.js"><link rel="prefetch" href="/blog/assets/js/22.ef377f9f.js"><link rel="prefetch" href="/blog/assets/js/23.86927b1c.js"><link rel="prefetch" href="/blog/assets/js/3.e684de52.js"><link rel="prefetch" href="/blog/assets/js/4.c397a620.js"><link rel="prefetch" href="/blog/assets/js/5.fc2a5355.js"><link rel="prefetch" href="/blog/assets/js/6.7c45b942.js"><link rel="prefetch" href="/blog/assets/js/7.9973c160.js"><link rel="prefetch" href="/blog/assets/js/8.b26946fc.js"><link rel="prefetch" href="/blog/assets/js/9.97bb3cd3.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.eb09ddcc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Coding Test</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/blog/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/blog/python/" class="nav-link router-link-active">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/blog/swagger/" class="nav-link">
+  Swagger
+</a></li><li class="dropdown-item"><!----> <a href="/blog/zh/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/blog/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/oracle/" class="nav-link">
+  Oracle
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/flush2621" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/blog/cpp/" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/blog/python/" class="nav-link router-link-active">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/blog/swagger/" class="nav-link">
+  Swagger
+</a></li><li class="dropdown-item"><!----> <a href="/blog/zh/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/blog/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/oracle/" class="nav-link">
+  Oracle
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/flush2621" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/python/" class="sidebar-link">Python笔记</a></li><li><a href="/blog/python/pynote.html" class="active sidebar-link">python模块</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#pyperclip剪贴板-安装和使用" class="sidebar-link">pyperclip剪贴板.安装和使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#一、pyperclip模块简介" class="sidebar-link">一、pyperclip模块简介</a></li><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#二、pyperclip安装" class="sidebar-link">二、pyperclip安装</a></li><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#三、pyperclip模块中函数使用" class="sidebar-link">三、pyperclip模块中函数使用</a></li><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#四、项目举例" class="sidebar-link">四、项目举例</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#pyautogui自动化控制鼠标和键盘操作" class="sidebar-link">pyautogui自动化控制鼠标和键盘操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#鼠标操作样例" class="sidebar-link">鼠标操作样例</a></li><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#键盘操作样例" class="sidebar-link">键盘操作样例</a></li><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#按键支持" class="sidebar-link">按键支持</a></li><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#提示信息" class="sidebar-link">提示信息</a></li><li class="sidebar-sub-header"><a href="/blog/python/pynote.html#截屏" class="sidebar-link">截屏</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="python模块"><a href="#python模块" class="header-anchor">#</a> python模块</h1> <p><em>Timestamp:2020/5/27</em></p> <h2 id="pyperclip剪贴板-安装和使用"><a href="#pyperclip剪贴板-安装和使用" class="header-anchor">#</a> pyperclip剪贴板.安装和使用</h2> <h3 id="一、pyperclip模块简介"><a href="#一、pyperclip模块简介" class="header-anchor">#</a> 一、pyperclip模块简介</h3> <p>pyperclip模块中有两个函数，分别是copy()和paste()，copy()用于向计算机的剪贴板发送文本，paste()用于从计算机剪贴板接收文本。</p> <h3 id="二、pyperclip安装"><a href="#二、pyperclip安装" class="header-anchor">#</a> 二、pyperclip安装</h3> <p>pyperclip模块不是Python自带的，需要自己安装，安装比较简单，windows下输入安装命令即可，如下：</p> <p>pip install pyperclip</p> <h3 id="三、pyperclip模块中函数使用"><a href="#三、pyperclip模块中函数使用" class="header-anchor">#</a> 三、pyperclip模块中函数使用</h3> <p>&gt;&gt;&gt;import pyperclip</p> <p>&gt;&gt;&gt;pyperclip.copy(&quot;Hello world&quot;) #此时打开剪贴板，可直接粘贴&quot;Hello world&quot;到剪贴板</p> <p>如果在剪贴板中复制了某一段字符，比如&quot;nihao&quot;，此时运行pyperclip.paste()就会返回&quot;nihao&quot;</p> <h3 id="四、项目举例"><a href="#四、项目举例" class="header-anchor">#</a> 四、项目举例</h3> <p><em><strong>（摘自python编程快速上手-让繁琐工作自动化）</strong></em></p> <p>1、口令保管箱</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>PASSWORDS <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;email&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;euyr8wuey89r3geidw&quot;</span><span class="token punctuation">,</span>
+
+<span class="token string">&quot;blog&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;wqeiy2398eghduk&quot;</span><span class="token punctuation">,</span>
+
+<span class="token string">&quot;computer&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ewkwo][ke;w&quot;</span><span class="token punctuation">}</span>
+
+<span class="token keyword">import</span> sys<span class="token punctuation">,</span> pyperclip
+
+<span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;Please input the account name&quot;</span><span class="token punctuation">)</span>
+
+sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+account <span class="token operator">=</span> sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+<span class="token keyword">if</span> account <span class="token keyword">in</span> PASSWORDS<span class="token punctuation">:</span>
+
+pyperclip<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>PASSWORDS<span class="token punctuation">[</span>account<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;The password for &quot;</span> <span class="token operator">+</span> account <span class="token operator">+</span> <span class="token string">&quot; copied to clipboard!&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;There is no account named &quot;</span> <span class="token operator">+</span> account <span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>2、在标记中添加无序列表</p> <p>从剪贴板复制一段文本，在文本每一行开头加上“*”，再粘贴回剪贴板</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">import</span> pyperclip
+
+text <span class="token operator">=</span> pyperclip<span class="token punctuation">.</span>paste<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+lines <span class="token operator">=</span> text<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lines<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+lines<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;*&quot;</span> <span class="token operator">+</span> lines<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+
+text <span class="token operator">=</span> <span class="token string">&quot;\n&quot;</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>lines<span class="token punctuation">)</span>
+
+pyperclip<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="pyautogui自动化控制鼠标和键盘操作"><a href="#pyautogui自动化控制鼠标和键盘操作" class="header-anchor">#</a> pyautogui自动化控制鼠标和键盘操作</h2> <p>PyAutoGUI是一个纯Python的GUI自动化工具，其目的是可以用程序自动控制鼠标和键盘操作，多平台支持（Windows，OS X，Linux）。</p> <h3 id="鼠标操作样例"><a href="#鼠标操作样例" class="header-anchor">#</a> 鼠标操作样例</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">import</span> pyautogui
+
+<span class="token comment"># 获取当前屏幕分辨率</span>
+screenWidth<span class="token punctuation">,</span> screenHeight <span class="token operator">=</span> pyautogui<span class="token punctuation">.</span>size<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 获取当前鼠标位置</span>
+currentMouseX<span class="token punctuation">,</span> currentMouseY <span class="token operator">=</span> pyautogui<span class="token punctuation">.</span>position<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 2秒钟鼠标移动坐标为100,100位置  绝对移动</span>
+<span class="token comment">#pyautogui.moveTo(100, 100,2)</span>
+pyautogui<span class="token punctuation">.</span>moveTo<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span>duration<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> tween<span class="token operator">=</span>pyautogui<span class="token punctuation">.</span>linear<span class="token punctuation">)</span>
+
+<span class="token comment">#鼠标移到屏幕中央。</span>
+pyautogui<span class="token punctuation">.</span>moveTo<span class="token punctuation">(</span>screenWidth <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">,</span> screenHeight <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 鼠标左击一次</span>
+<span class="token comment">#pyautogui.click()</span>
+<span class="token comment"># x </span>
+<span class="token comment"># y </span>
+<span class="token comment"># clicks 点击次数</span>
+<span class="token comment"># interval点击之间的间隔</span>
+<span class="token comment"># button 'left', 'middle', 'right' 对应鼠标 左 中 右或者取值(1, 2, or 3)</span>
+<span class="token comment"># tween 渐变函数</span>
+<span class="token comment">#</span>
+pyautogui<span class="token punctuation">.</span>click<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> clicks<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> interval<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">,</span> button<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">,</span> duration<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">,</span> tween<span class="token operator">=</span>pyautogui<span class="token punctuation">.</span>linear<span class="token punctuation">)</span>
+
+<span class="token comment"># 鼠标相对移动 ,向下移动</span>
+<span class="token comment">#pyautogui.moveRel(None, 10)</span>
+pyautogui<span class="token punctuation">.</span>moveRel<span class="token punctuation">(</span>xOffset<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> yOffset<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span>duration<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">,</span> tween<span class="token operator">=</span>pyautogui<span class="token punctuation">.</span>linear<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 鼠标当前位置0间隔双击</span>
+<span class="token comment">#pyautogui.doubleClick()</span>
+pyautogui<span class="token punctuation">.</span>doubleClick<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> interval<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">,</span> button<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">,</span> duration<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">,</span> tween<span class="token operator">=</span>pyautogui<span class="token punctuation">.</span>linear<span class="token punctuation">)</span>
+
+<span class="token comment"># 鼠标当前位置3击</span>
+<span class="token comment">#pyautogui.tripleClick()</span>
+pyautogui<span class="token punctuation">.</span>tripleClick<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> interval<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">,</span> button<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">,</span> duration<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">,</span> tween<span class="token operator">=</span>pyautogui<span class="token punctuation">.</span>linear<span class="token punctuation">)</span>
+
+<span class="token comment">#右击</span>
+pyautogui<span class="token punctuation">.</span>rightClick<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#中击</span>
+pyautogui<span class="token punctuation">.</span>middleClick<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#  用缓动/渐变函数让鼠标2秒后移动到(500,500)位置</span>
+<span class="token comment">#  use tweening/easing function to move mouse over 2 seconds.</span>
+pyautogui<span class="token punctuation">.</span>moveTo<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">500</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">500</span><span class="token punctuation">,</span> duration<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> tween<span class="token operator">=</span>pyautogui<span class="token punctuation">.</span>easeInOutQuad<span class="token punctuation">)</span>
+
+<span class="token comment">#鼠标拖拽</span>
+pyautogui<span class="token punctuation">.</span>dragTo<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">427</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">535</span><span class="token punctuation">,</span> duration<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span>button<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">)</span>
+
+<span class="token comment">#鼠标相对拖拽</span>
+pyautogui<span class="token punctuation">.</span>dragRel<span class="token punctuation">(</span>xOffset<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span>yOffset<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span>duration<span class="token operator">=</span><span class="token punctuation">,</span>button<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">,</span>mouseDownUp<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+
+<span class="token comment">#鼠标移动到x=1796, y=778位置按下</span>
+pyautogui<span class="token punctuation">.</span>mouseDown<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">1796</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">778</span><span class="token punctuation">,</span> button<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">)</span>
+
+<span class="token comment">#鼠标移动到x=2745, y=778位置松开（与mouseDown组合使用选中）</span>
+pyautogui<span class="token punctuation">.</span>mouseUp<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">2745</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">778</span><span class="token punctuation">,</span> button<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">,</span>duration<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span>
+
+<span class="token comment">#鼠标当前位置滚轮滚动</span>
+pyautogui<span class="token punctuation">.</span>scroll<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#鼠标水平滚动（Linux）</span>
+pyautogui<span class="token punctuation">.</span>hscroll<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#鼠标左右滚动（Linux）</span>
+pyautogui<span class="token punctuation">.</span>vscroll<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br></div></div><h3 id="键盘操作样例"><a href="#键盘操作样例" class="header-anchor">#</a> 键盘操作样例</h3> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#模拟输入信息</span>
+pyautogui<span class="token punctuation">.</span>typewrite<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">'Hello world!'</span><span class="token punctuation">,</span>interval<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">)</span>
+<span class="token comment">#点击ESC</span>
+pyautogui<span class="token punctuation">.</span>press<span class="token punctuation">(</span><span class="token string">'esc'</span><span class="token punctuation">)</span>
+<span class="token comment"># 按住shift键</span>
+pyautogui<span class="token punctuation">.</span>keyDown<span class="token punctuation">(</span><span class="token string">'shift'</span><span class="token punctuation">)</span>
+<span class="token comment"># 放开shift键</span>
+pyautogui<span class="token punctuation">.</span>keyUp<span class="token punctuation">(</span><span class="token string">'shift'</span><span class="token punctuation">)</span>
+<span class="token comment"># 模拟组合热键</span>
+pyautogui<span class="token punctuation">.</span>hotkey<span class="token punctuation">(</span><span class="token string">'ctrl'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="按键支持"><a href="#按键支持" class="header-anchor">#</a> 按键支持</h3> <table><thead><tr><th>按键</th> <th>说明</th></tr></thead> <tbody><tr><td><code>enter</code>(或<code>return</code> 或 <code>\n</code>)</td> <td>回车</td></tr> <tr><td><code>esc</code></td> <td>ESC键</td></tr> <tr><td><code>shiftleft</code>, <code>shiftright</code></td> <td>左右SHIFT键</td></tr> <tr><td><code>altleft</code>, <code>altright</code></td> <td>左右ALT键</td></tr> <tr><td><code>ctrlleft</code>, <code>ctrlright</code></td> <td>左右CTRL键</td></tr> <tr><td><code>tab</code> (<code>\t</code>)</td> <td>TAB键</td></tr> <tr><td><code>backspace</code>, <code>delete</code></td> <td>BACKSPACE 、DELETE键</td></tr> <tr><td><code>pageup</code>, <code>pagedown</code></td> <td>PAGE UP 和 PAGE DOWN键</td></tr> <tr><td><code>home</code>, <code>end</code></td> <td>HOME 和 END键</td></tr> <tr><td><code>up</code>, <code>down</code>, <code>left</code>,<code>right</code></td> <td>箭头键</td></tr> <tr><td><code>f1</code>, <code>f2</code>, <code>f3</code>….</td> <td>F1…….F12键</td></tr> <tr><td><code>volumemute</code>, <code>volumedown</code>,<code>volumeup</code></td> <td>有些键盘没有</td></tr> <tr><td><code>pause</code></td> <td>PAUSE键</td></tr> <tr><td><code>capslock</code>, <code>numlock</code>,<code>scrolllock</code></td> <td>CAPS LOCK, NUM LOCK, 和 SCROLLLOCK 键</td></tr> <tr><td><code>insert</code></td> <td>INS或INSERT键</td></tr> <tr><td><code>printscreen</code></td> <td>PRTSC 或 PRINT SCREEN键</td></tr> <tr><td><code>winleft</code>, <code>winright</code></td> <td>Win键</td></tr> <tr><td><code>command</code></td> <td>Mac OS X command键</td></tr></tbody></table> <h3 id="提示信息"><a href="#提示信息" class="header-anchor">#</a> 提示信息</h3> <p><em><strong>alert</strong></em></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#pyautogui.alert('This is an alert box.','Test')</span>
+pyautogui<span class="token punctuation">.</span>alert<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">'This is an alert box.'</span><span class="token punctuation">,</span> title<span class="token operator">=</span><span class="token string">'Test'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><em><strong>option</strong></em></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#pyautogui.confirm('Shall I proceed?')</span>
+pyautogui<span class="token punctuation">.</span>confirm<span class="token punctuation">(</span><span class="token string">'Enter option.'</span><span class="token punctuation">,</span> buttons<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><em><strong>password</strong></em></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>a <span class="token operator">=</span> pyautogui<span class="token punctuation">.</span>password<span class="token punctuation">(</span><span class="token string">'Enter password (text will be hidden)'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><em><strong>prompt</strong></em></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>a <span class="token operator">=</span> pyautogui<span class="token punctuation">.</span>prompt<span class="token punctuation">(</span><span class="token string">'input  message'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="截屏"><a href="#截屏" class="header-anchor">#</a> 截屏</h3> <p><em><strong>整个屏幕截图并保存</strong></em></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>im1 <span class="token operator">=</span> pyautogui<span class="token punctuation">.</span>screenshot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+im1<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'my_screenshot.png'</span><span class="token punctuation">)</span>
+
+im2 <span class="token operator">=</span> pyautogui<span class="token punctuation">.</span>screenshot<span class="token punctuation">(</span><span class="token string">'my_screenshot2.png'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><em><strong>屏幕查找图片位置并获取中间点</strong></em></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#在当前屏幕中查找指定图片(图片需要由系统截图功能截取的图)</span>
+coords <span class="token operator">=</span> pyautogui<span class="token punctuation">.</span>locateOnScreen<span class="token punctuation">(</span><span class="token string">'folder.png'</span><span class="token punctuation">)</span>
+<span class="token comment">#获取定位到的图中间点坐标</span>
+x<span class="token punctuation">,</span>y<span class="token operator">=</span>pyautogui<span class="token punctuation">.</span>center<span class="token punctuation">(</span>coords<span class="token punctuation">)</span>
+<span class="token comment">#右击该坐标点</span>
+pyautogui<span class="token punctuation">.</span>rightClick<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><em><strong>安全设置</strong></em></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">import</span> pyautogui
+
+<span class="token comment">#保护措施，避免失控</span>
+pyautogui<span class="token punctuation">.</span>FAILSAFE <span class="token operator">=</span> <span class="token boolean">True</span>
+<span class="token comment">#为所有的PyAutoGUI函数增加延迟。默认延迟时间是0.1秒。</span>
+pyautogui<span class="token punctuation">.</span>PAUSE <span class="token operator">=</span> <span class="token number">0.5</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/python/" class="prev router-link-active">
+        Python笔记
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.5c42660f.js" defer></script><script src="/blog/assets/js/2.e56be046.js" defer></script><script src="/blog/assets/js/20.88ce400a.js" defer></script>
+  </body>
+</html>

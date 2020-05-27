@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>c++知识整理 | Coding Test</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/blog/vintage.png">
+    <meta name="description" content="">
+    <link rel="preload" href="/blog/assets/css/0.styles.eb09ddcc.css" as="style"><link rel="preload" href="/blog/assets/js/app.5c42660f.js" as="script"><link rel="preload" href="/blog/assets/js/2.e56be046.js" as="script"><link rel="preload" href="/blog/assets/js/7.9973c160.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.dfdebfe4.js"><link rel="prefetch" href="/blog/assets/js/11.f6969033.js"><link rel="prefetch" href="/blog/assets/js/12.4ee28117.js"><link rel="prefetch" href="/blog/assets/js/13.3d9bbc61.js"><link rel="prefetch" href="/blog/assets/js/14.d811ee2e.js"><link rel="prefetch" href="/blog/assets/js/15.f33d1813.js"><link rel="prefetch" href="/blog/assets/js/16.ec13d158.js"><link rel="prefetch" href="/blog/assets/js/17.4bc69c62.js"><link rel="prefetch" href="/blog/assets/js/18.ea863cb2.js"><link rel="prefetch" href="/blog/assets/js/19.92aabd56.js"><link rel="prefetch" href="/blog/assets/js/20.88ce400a.js"><link rel="prefetch" href="/blog/assets/js/21.c39432cf.js"><link rel="prefetch" href="/blog/assets/js/22.ef377f9f.js"><link rel="prefetch" href="/blog/assets/js/23.86927b1c.js"><link rel="prefetch" href="/blog/assets/js/3.e684de52.js"><link rel="prefetch" href="/blog/assets/js/4.c397a620.js"><link rel="prefetch" href="/blog/assets/js/5.fc2a5355.js"><link rel="prefetch" href="/blog/assets/js/6.7c45b942.js"><link rel="prefetch" href="/blog/assets/js/8.b26946fc.js"><link rel="prefetch" href="/blog/assets/js/9.97bb3cd3.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.eb09ddcc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Coding Test</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/blog/cpp/" class="nav-link router-link-active">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/blog/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/blog/swagger/" class="nav-link">
+  Swagger
+</a></li><li class="dropdown-item"><!----> <a href="/blog/zh/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/blog/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/oracle/" class="nav-link">
+  Oracle
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/flush2621" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/blog/cpp/" class="nav-link router-link-active">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/blog/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/blog/swagger/" class="nav-link">
+  Swagger
+</a></li><li class="dropdown-item"><!----> <a href="/blog/zh/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/blog/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/oracle/" class="nav-link">
+  Oracle
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/flush2621" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/cpp/" class="sidebar-link">C++笔记</a></li><li><a href="/blog/cpp/cppnotes.html" class="active sidebar-link">c++知识整理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/cpp/cppnotes.html#一、消息传递" class="sidebar-link">一、消息传递</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/cpp/cppnotes.html#_1、dos和windows程序流程对比" class="sidebar-link">1、DOS和WINDOWS程序流程对比</a></li><li class="sidebar-sub-header"><a href="/blog/cpp/cppnotes.html#_2、新建win32桌面应用添加hook" class="sidebar-link">2、新建win32桌面应用添加HOOK</a></li><li class="sidebar-sub-header"><a href="/blog/cpp/cppnotes.html#_3、dll注入" class="sidebar-link">3、DLL注入</a></li><li class="sidebar-sub-header"><a href="/blog/cpp/cppnotes.html#_4、空项目新建mfc程序" class="sidebar-link">4、空项目新建MFC程序</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="c-随笔"><a href="#c-随笔" class="header-anchor">#</a> C++随笔</h1> <p><em>Timestamp:2020/5/26</em></p> <h2 id="一、消息传递"><a href="#一、消息传递" class="header-anchor">#</a> 一、消息传递</h2> <p>大部分Windows应用程序都是基于消息机制的（命令行下的程序并不基于消息机制），所有消息机制是Windows下编程的基础。</p> <h3 id="_1、dos和windows程序流程对比"><a href="#_1、dos和windows程序流程对比" class="header-anchor">#</a> 1、DOS和WINDOWS程序流程对比</h3> <p>DOS:</p> <p><img src="/blog/assets/img/dosfunc.328516ba.png" alt="An image"></p> <p>WINDOWS:</p> <p><img src="/blog/assets/img/winfunc.0e55ade9.png" alt="An image"></p> <h3 id="_2、新建win32桌面应用添加hook"><a href="#_2、新建win32桌面应用添加hook" class="header-anchor">#</a> 2、新建win32桌面应用添加HOOK</h3> <p>二话不说线上代码:</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;Windows.h&gt;</span></span>
+
+<span class="token comment">//回调函数</span>
+LRESULT CALLBACK <span class="token function">WindowProc</span><span class="token punctuation">(</span>HWND hwnd<span class="token punctuation">,</span> UINT uMsg<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//鼠标钩子处理函数</span>
+LRESULT CALLBACK <span class="token function">MouseProc</span><span class="token punctuation">(</span><span class="token keyword">int</span> nCode<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//键盘钩子处理函数</span>
+LRESULT CALLBACK <span class="token function">KeyboardProc</span><span class="token punctuation">(</span><span class="token keyword">int</span> nCode<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//WinMain:相当于main函数，入口函数，窗口应用</span>
+<span class="token comment">//HINSTANCE:应用程序实例句柄类型</span>
+<span class="token comment">//LPSTR: char*</span>
+
+HHOOK g_hMouseHook<span class="token punctuation">;</span>
+HHOOK g_hKeyboardHook<span class="token punctuation">;</span>
+HWND g_hwnd<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> WINAPI <span class="token function">WinMain</span><span class="token punctuation">(</span>HINSTANCE hInstance<span class="token punctuation">,</span> HINSTANCE hPrevInstance<span class="token punctuation">,</span> LPSTR lpCmdLine<span class="token punctuation">,</span> <span class="token keyword">int</span> nShowCmd<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">//1、创建窗口类</span>
+	WNDCLASS wc<span class="token punctuation">;</span>
+	wc<span class="token punctuation">.</span>cbClsExtra <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>	<span class="token comment">//窗口类的额外空间大小</span>
+	wc<span class="token punctuation">.</span>cbWndExtra <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	wc<span class="token punctuation">.</span>hbrBackground <span class="token operator">=</span> <span class="token punctuation">(</span>HBRUSH<span class="token punctuation">)</span><span class="token function">GetStockObject</span><span class="token punctuation">(</span>WHITE_BRUSH<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//白色画刷</span>
+	wc<span class="token punctuation">.</span>hCursor <span class="token operator">=</span> <span class="token function">LoadCursor</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">,</span> IDC_ARROW<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//光标句柄</span>
+	wc<span class="token punctuation">.</span>hIcon <span class="token operator">=</span> <span class="token function">LoadIcon</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">,</span> IDI_APPLICATION<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//图标句柄</span>
+	wc<span class="token punctuation">.</span>hInstance <span class="token operator">=</span> hInstance<span class="token punctuation">;</span>	<span class="token comment">//当前应用程序实例句柄</span>
+	wc<span class="token punctuation">.</span>lpfnWndProc <span class="token operator">=</span> WindowProc<span class="token punctuation">;</span> <span class="token comment">//窗口处理函数</span>
+	wc<span class="token punctuation">.</span>lpszClassName <span class="token operator">=</span> <span class="token function">TEXT</span><span class="token punctuation">(</span><span class="token string">&quot;MSGWindow&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//窗口类型名</span>
+	wc<span class="token punctuation">.</span>lpszMenuName <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>	
+	wc<span class="token punctuation">.</span>style <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>	<span class="token comment">//窗口类的风格</span>
+	<span class="token comment">//2、注册窗口类</span>
+	<span class="token function">RegisterClass</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>wc<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">//3、创建窗口</span>
+	<span class="token comment">//HWND hwnd = CreateWindow(wc.lpszClassName, TEXT(&quot;Hello_World&quot;), WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, NULL, NULL, hInstance, NULL);</span>
+	HWND hwnd <span class="token operator">=</span> <span class="token function">CreateWindow</span><span class="token punctuation">(</span>wc<span class="token punctuation">.</span>lpszClassName<span class="token punctuation">,</span> <span class="token function">TEXT</span><span class="token punctuation">(</span><span class="token string">&quot;Hello_Milo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> WS_OVERLAPPEDWINDOW<span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">800</span><span class="token punctuation">,</span> <span class="token number">600</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> hInstance<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	g_hwnd <span class="token operator">=</span> hwnd<span class="token punctuation">;</span>
+	<span class="token comment">//4、显示窗口</span>
+	<span class="token function">ShowWindow</span><span class="token punctuation">(</span>hwnd<span class="token punctuation">,</span> SW_SHOW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">//5、更新窗口</span>
+	<span class="token function">UpdateWindow</span><span class="token punctuation">(</span>hwnd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	MSG msg<span class="token punctuation">;</span>
+	<span class="token comment">//6、消息循环</span>
+	<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token function">GetMessage</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>msg<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token comment">//将虚拟键消息转换为字符消息WM_CHAR</span>
+		<span class="token function">TranslateMessage</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">//将消息分发给窗口处理函数</span>
+		<span class="token function">DispatchMessage</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//1.进程内钩子HOOK：只对当前进程起作用</span>
+<span class="token comment">//2.全局钩子：针对系统所有进程，需要一个DLL，既注入技术</span>
+LRESULT CALLBACK <span class="token function">WindowProc</span><span class="token punctuation">(</span>HWND hwnd<span class="token punctuation">,</span> UINT uMsg<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">switch</span> <span class="token punctuation">(</span>uMsg<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+	<span class="token keyword">case</span> WM_CREATE<span class="token operator">:</span>	<span class="token comment">//窗口创建消息</span>
+		g_hMouseHook <span class="token operator">=</span> <span class="token function">SetWindowsHookEx</span><span class="token punctuation">(</span>WH_MOUSE<span class="token punctuation">,</span>MouseProc<span class="token punctuation">,</span><span class="token constant">NULL</span><span class="token punctuation">,</span><span class="token function">GetCurrentThreadId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		g_hKeyboardHook <span class="token operator">=</span> <span class="token function">SetWindowsHookEx</span><span class="token punctuation">(</span>WH_KEYBOARD<span class="token punctuation">,</span> KeyboardProc<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token function">GetCurrentThreadId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">case</span> WM_MOUSEMOVE<span class="token operator">:</span>
+		<span class="token punctuation">{</span>
+			<span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token function">LOWORD</span><span class="token punctuation">(</span>lParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token function">HIWORD</span><span class="token punctuation">(</span>lParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			TCHAR str<span class="token punctuation">[</span><span class="token number">255</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+			<span class="token function">wsprintf</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> L<span class="token string">&quot;当前鼠标坐标(%d,%d)&quot;</span><span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">SetWindowText</span><span class="token punctuation">(</span>hwnd<span class="token punctuation">,</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">case</span> WM_LBUTTONDOWN<span class="token operator">:</span>
+		<span class="token function">MessageBox</span><span class="token punctuation">(</span>hwnd<span class="token punctuation">,</span> L<span class="token string">&quot;鼠标按下&quot;</span><span class="token punctuation">,</span> L<span class="token string">&quot;提示&quot;</span><span class="token punctuation">,</span> MB_OK<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">case</span> WM_KEYDOWN<span class="token operator">:</span>
+		<span class="token function">MessageBox</span><span class="token punctuation">(</span>hwnd<span class="token punctuation">,</span> L<span class="token string">&quot;键盘按下&quot;</span><span class="token punctuation">,</span> L<span class="token string">&quot;提示&quot;</span><span class="token punctuation">,</span> MB_OK<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">case</span> WM_CLOSE<span class="token operator">:</span>		<span class="token comment">//窗口关闭消息</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">MessageBox</span><span class="token punctuation">(</span>hwnd<span class="token punctuation">,</span> L<span class="token string">&quot;Really quit?&quot;</span><span class="token punctuation">,</span> L<span class="token string">&quot;My application&quot;</span><span class="token punctuation">,</span> MB_OKCANCEL<span class="token punctuation">)</span> <span class="token operator">==</span> IDOK<span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			<span class="token function">DestroyWindow</span><span class="token punctuation">(</span>hwnd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">case</span> WM_DESTROY<span class="token operator">:</span>	<span class="token comment">//窗口销毁消息</span>
+		<span class="token function">PostQuitMessage</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//WM_QUIT</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token function">DefWindowProc</span><span class="token punctuation">(</span>hwnd<span class="token punctuation">,</span> uMsg<span class="token punctuation">,</span> wParam<span class="token punctuation">,</span> lParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//钩子处理函数</span>
+LRESULT CALLBACK <span class="token function">MouseProc</span><span class="token punctuation">(</span><span class="token keyword">int</span> nCode<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">//MessageBox(NULL, L&quot;123&quot;, L&quot;title&quot;, MB_OK);</span>
+	<span class="token comment">//return 1;//返回非0值，表示对当前消息处理了，这样此消息就不会往下传递了</span>
+	<span class="token comment">//return CallNextHookEx(g_hMouseHook, nCode, wParam, lParam);//放行</span>
+	<span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+LRESULT CALLBACK <span class="token function">KeyboardProc</span><span class="token punctuation">(</span><span class="token keyword">int</span> nCode<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">/*
+	if (wParam == VK_SPACE)
+	{
+		return 1;
+	}
+	else
+	{
+		return CallNextHookEx(g_hKeyboardHook, nCode, wParam, lParam);
+	}
+	*/</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>wParam <span class="token operator">==</span> VK_F2<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token function">UnhookWindowsHookEx</span><span class="token punctuation">(</span>g_hKeyboardHook<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">UnhookWindowsHookEx</span><span class="token punctuation">(</span>g_hMouseHook<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">else</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br></div></div><h3 id="_3、dll注入"><a href="#_3、dll注入" class="header-anchor">#</a> 3、DLL注入</h3> <p>新建DLL项目</p> <p>hooktest.h</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;Windows.h&gt;</span></span>
+
+<span class="token comment">//安装鼠标钩子</span>
+<span class="token keyword">extern</span> <span class="token string">&quot;C&quot;</span> <span class="token function">__declspec</span><span class="token punctuation">(</span>dllexport<span class="token punctuation">)</span> BOOL <span class="token function">InstallMouseHook</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//钩子处理函数</span>
+LRESULT CALLBACK <span class="token function">MouseProc</span><span class="token punctuation">(</span><span class="token keyword">int</span> nCode<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>hokktest.cpp</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&quot;hooktest.h&quot;</span></span>
+
+HHOOK g_hMouseHook<span class="token punctuation">;</span>
+
+BOOL <span class="token function">InstallMouseHook</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	g_hMouseHook <span class="token operator">=</span> <span class="token function">SetWindowsHookEx</span><span class="token punctuation">(</span>WH_MOUSE<span class="token punctuation">,</span> MouseProc<span class="token punctuation">,</span> <span class="token function">GetModuleHandle</span><span class="token punctuation">(</span>L<span class="token string">&quot;HookTest&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>g_hMouseHook <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span>
+		<span class="token keyword">return</span> TRUE<span class="token punctuation">;</span>
+	<span class="token keyword">else</span>
+		<span class="token keyword">return</span> FALSE<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+LRESULT CALLBACK <span class="token function">MouseProc</span><span class="token punctuation">(</span><span class="token keyword">int</span> nCode<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">//return CallNextHookEx(g_hMouseHook, nCode, wParam, lParam);</span>
+	<span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>这是一个全局屏蔽鼠标的DLL注入，编译后，将HookTest.dll和HookTest.lib两个文件copy到需要注入的项目下</p> <p>然后注入进去</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">pragma</span> comment(lib,&quot;HookTest.lib&quot;)</span>
+<span class="token keyword">extern</span> <span class="token string">&quot;C&quot;</span> <span class="token function">__declspec</span><span class="token punctuation">(</span>dllimport<span class="token punctuation">)</span> BOOL <span class="token function">InstallMouseHook</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">case</span> WM_CREATE<span class="token operator">:</span>	<span class="token comment">//窗口创建消息</span>
+		<span class="token function">InstallMouseHook</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_4、空项目新建mfc程序"><a href="#_4、空项目新建mfc程序" class="header-anchor">#</a> 4、空项目新建MFC程序</h3> <p>mfc.h</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;afxwin.h&gt;</span></span>
+<span class="token comment">//1)应用程序类CWinApp，派生类（子类）</span>
+class MyApp<span class="token operator">:</span> public CWinApp
+<span class="token punctuation">{</span>
+public<span class="token operator">:</span>
+	<span class="token comment">//基类的虚函数</span>
+	<span class="token comment">//派生类只是重写</span>
+	<span class="token comment">//MFC程序的入口地址</span>
+	virtual BOOL <span class="token function">InitInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+private<span class="token operator">:</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2）框架类CFrameWnd，派生类（子类）</span>
+class MyFrame <span class="token operator">:</span> public CFrameWnd
+<span class="token punctuation">{</span>
+public<span class="token operator">:</span>
+	<span class="token function">MyFrame</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+private<span class="token operator">:</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>mfc.cpp</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&quot;mfc.h&quot;</span></span>
+
+<span class="token comment">//有且仅有一个全局应用程序类对象</span>
+MyApp myApp<span class="token punctuation">;</span>
+
+<span class="token comment">//程序的入口地址</span>
+BOOL MyApp<span class="token operator">::</span><span class="token function">InitInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">/*
+	1.创建框架类对象
+	2.显示窗口
+	3.更新窗口
+	4.保存框架对象指针
+	*/</span>
+	MyFrame<span class="token operator">*</span> frame <span class="token operator">=</span> new MyFrame<span class="token punctuation">;</span><span class="token comment">//1</span>
+	frame<span class="token operator">-&gt;</span><span class="token function">ShowWindow</span><span class="token punctuation">(</span>SW_SHOWNORMAL<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//2</span>
+	frame<span class="token operator">-&gt;</span><span class="token function">UpdateWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//3</span>
+	m_pMainWnd <span class="token operator">=</span> frame<span class="token punctuation">;</span><span class="token comment">//4</span>
+	<span class="token keyword">return</span> TRUE<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+MyFrame<span class="token operator">::</span><span class="token function">MyFrame</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">//CWnd类的成员函数 CWnd::Create</span>
+	<span class="token comment">//CFrameWnd继承于CWnd</span>
+	<span class="token function">Create</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token function">TEXT</span><span class="token punctuation">(</span><span class="token string">&quot;MFC&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>MFC编译时，需要在<font color="#c0392b"><em><strong>项目</strong></em></font>右键的<font color="#c0392b"><em><strong>属性</strong></em></font>页面的<font color="#c0392b"><em><strong>高级</strong></em></font>选项下的<font color="#c0392b"><em><strong>MFC的使用</strong></em></font>里面更改默认的<font color="#c0392b"><em><strong>使用标准Windows库</strong></em></font>选择<font color="#c0392b"><em><strong>在共享DLL中使用MFC</strong></em></font></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/cpp/" class="prev router-link-active">
+        C++笔记
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.5c42660f.js" defer></script><script src="/blog/assets/js/2.e56be046.js" defer></script><script src="/blog/assets/js/7.9973c160.js" defer></script>
+  </body>
+</html>
